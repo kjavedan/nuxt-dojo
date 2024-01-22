@@ -1,0 +1,13 @@
+name = "playground"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2023-12-01"
+# account_id = "javedankhaled@gmail.com"
+# route = "<(optional) mainly useful when you want to setup custom domains>"
+
+rules = [
+  { type = "ESModule", globs = ["**/*.js", "**/*.mjs"]},
+]
+
+[site]
+bucket = ".output/public"
