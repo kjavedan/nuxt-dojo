@@ -1,6 +1,7 @@
 <template>
+  <div>Home page</div>
   <div>
-    <h1>Hello world</h1>
+    <button class="btn">button</button>
   </div>
 </template>
 

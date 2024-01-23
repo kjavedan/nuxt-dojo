@@ -1,9 +1,13 @@
 <template>
   <div>
-    <h1>about us</h1>
+    <pre>{{ data }}</pre>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/GBP");
+
+console.log(data.value);
+</script>
 
 <style lang="scss" scoped></style>
