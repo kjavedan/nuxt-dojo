@@ -5,9 +5,7 @@
 </template>
 
 <script setup>
-const { data } = await useFetch("/api/currency/GBP");
-
-console.log(data.value);
+const { data } = await useFetch("/api/ninja");
 </script>
 
 <style lang="scss" scoped></style>
