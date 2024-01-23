@@ -11,10 +11,24 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/icon?family=Material+Icons",
         },
+        {
+          rel: "stylesheet",
+          href: "https://web.sdk.qcloud.com/player/tcplayer/release/v5.0.1/tcplayer.min.css",
+        },
+      ],
+      script: [
+        {
+          src: "https://web.sdk.qcloud.com/player/tcplayer/release/v4.9.0/tcplayer.v4.9.0.min.js",
+        },
       ],
     },
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY,
+  },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
   },
 });
